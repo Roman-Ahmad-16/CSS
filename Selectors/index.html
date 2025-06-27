@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+
+        /* CLASS SELECTORS  */
+        .h1{
+            color: aqua;
+            background-color: black;
+        }
+
+        /* ID SELECTORS */
+        #h2{
+            color: bisque;
+            background-color: black;
+        }
+
+        /* DESCENDENT SELECTORS */
+        div  p {
+            color: rgb(0, 0, 0);
+            background-color: rgb(55, 255, 0);
+        }
+
+        /* CHILD SELECTORS */
+        div > p {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+        }
+
+        /* UNIVERSAL SELECTORS */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Pseudo selector */
+        a:visited{
+            color: rgb(0, 255, 187);
+        }
+
+        a:link{
+            color: blue;
+        }
+
+        a:active{
+            background-color: brown;
+        }
+
+        a:hover{
+            background-color: aqua;
+        }
+
+        p:first-child{
+            background-color: blue;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <main>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus quo porro corrupti.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aliquid nobis fugiat.</p>
+    </main>
+
+
+
+
+    <div class="h1">
+        <h1>HELLO BSCS</h1>
+    </div>
+
+
+
+
+
+    <div id="h2">
+        <h1>
+            HELLO ROMAN
+        </h1>
+    </div>
+
+
+
+
+
+    <div>
+        <h1>
+            ROMAN
+        </h1>
+        <article>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, reiciendis possimus consequuntur sequi accusantium nam nesciunt optio facere dolores explicabo cupiditate officia. Maxime?
+            </p>
+        </article>
+    </div>
+
+
+
+
+
+
+    <div>
+        <h1>
+            roman
+        </h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptates excepturi eaque.
+        </p>
+    </div>
+
+
+
+    <div>
+        <a href="https://www.google.com">GO TO GOOGLE</a>
+        <a href="https://www.facebook2.com">GO TO FACEBOOK</a>
+        <a href="https://www.facebook3.com">GO TO FACEBOOK</a>
+        <a href="https://www.facebook4.com">GO TO FACEBOOK</a>
+    </div>
+
+
+
+</body>
+</html>
