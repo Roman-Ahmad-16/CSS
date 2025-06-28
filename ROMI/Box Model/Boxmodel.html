@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            background-color: aqua;
+        }
+
+        .box1{
+            color: black;
+            padding: 10px;
+            margin: 30px;
+            border: 3px solid red;
+            height:200px;
+            box-sizing: border-box;
+            /* PADDING + BORDER HEIGHT*/
+        }
+
+        /* MARGIN COLLAPSE */
+        /* JO MARGIN MAXIMUM HO GA WO SET HO JAY GA */
+
+        .box2{
+            color: rgb(255, 0, 0);
+            padding: 10px;
+            margin: 30px;
+            border: 3px solid red;
+            height:200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1">I AM A BOX </div>
+    <div class="box box2">I AM ANOTHER BOX</div>
+
+    
+</body>
+</html>
