@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 1 */
+        h1{
+            color: aqua;
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 1+10 */
+        h1.cred{
+            color: rgb(98, 255, 0);
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 10 */
+        .cyellow{
+            color: yellow;
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 10 */
+        .cpurple{
+            color: bisque;
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 10 */
+        .cred{
+            color: yellowgreen; 
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 10 */
+        [data-x=a]{
+            color: maroon;
+        }
+
+        /* THE SPECIFICITY OF THIS SELECTOR IS 1 + 10 + 10 + 10 + 10 = 41*/
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+        
+        /* [data-x=a]{ 
+            color: maroon !important;
+        } */
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1 class=" cpurple  cred cyellow" data-x="a">
+            THIS IS specificity LECTURE
+        </h1>
+    </div>
+</body>
+</html>
